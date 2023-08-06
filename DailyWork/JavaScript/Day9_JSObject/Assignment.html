@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <table id="mytable" class="table">
+            <thead>
+                <th id="name">Name</th>
+                <th id="branch">Branch</th>
+                <th id="age">Age</th>
+            </thead>
+
+        </table>
+        <button class="btn btn-outline-primary" onclick="data()">
+            Get All Data
+        </button>
+    </div>
+    <div class="container mt-3">
+        <button class="btn btn-outline-danger ms-5 me-5" onclick="filterAges('below20')">less than 20</button>
+        <button class="btn btn-outline-info me-5" onclick="filterAges('20to24')">between 20 to 24</button>
+        <button class="btn btn-outline-success" onclick="filterAges('above24')">greater than 24</button>
+    </div>
+
+    <script>
+        let s1 = {
+            name: "Sachin",
+            Branch: "CS-DS",
+            age: 22,
+        };
+        let s2 = {
+            name: "Satyam",
+            Branch: "CS-DS",
+            age: 23,
+        };
+        let s3 = {
+            name: "Arun",
+            Branch: "CS-DS",
+            age: 24,
+        };
+        let s4 = {
+            name: "Abhishek",
+            Branch: "CS-DS",
+            age: 21,
+        };
+        let s5 = {
+            name: "Sachin",
+            Branch: "CS-DS",
+            age: 20,
+        };
+        let s6 = {
+            name: "Pranjal",
+            Branch: "CS-AI",
+            age: 19,
+        };
+        let s7 = {
+            name: "Naman",
+            Branch: "CS-IOT",
+            age: 18,
+        };
+        let s8 = {
+            name: "Saurabh",
+            Branch: "CSE",
+            age: 17,
+        };
+        let s9 = {
+            name: "Abhay",
+            Branch: "CS-AI",
+            age: 23,
+        };
+        let s10 = {
+            name: "Shivam",
+            Branch: "CS-DS",
+            age: 28,
+        };
+        let s11 = {
+            name: "Jayant",
+            Branch: "CS-IOT",
+            age: 25,
+        };
+        let s12 = {
+            name: "Vaibhav",
+            Branch: "CS-DS",
+            age: 26,
+        };
+        let s13 = {
+            name: "Yash",
+            Branch: "CSE",
+            age: 22,
+        };
+        let s14 = {
+            name: "Rahul",
+            Branch: "CS-AI",
+            age: 21,
+        };
+        let s15 = {
+            name: "Krishna",
+            Branch: "CS-DS",
+            age: 24,
+        };
+
+
+        let arr = [
+            s1,
+            s2,
+            s3,
+            s4,
+            s5,
+            s6,
+            s7,
+            s8,
+            s9,
+            s10,
+            s11,
+            s12,
+            s13,
+            s14,
+            s15,
+        ];
+        //console.log(arr);
+
+        function data() {
+            // window.alert("a");
+            var table = document.getElementById("mytable");
+            if (table.rows.length == 1) {
+
+                // var table = document.getElementById("mytable");
+                for (var i = 0; i < arr.length; i++) {
+                    var row = table.insertRow(-1);
+
+                    var cell1 = row.insertCell(0);
+                    cell1.innerHTML = arr[i].name;
+
+                    var cell2 = row.insertCell(1);
+                    cell2.innerHTML = arr[i].Branch;
+
+                    var cell3 = row.insertCell(2);
+                    cell3.innerHTML = arr[i].age;
+                }
+            }
+        }
+
+        function filterAges(input) {
+            var table = document.getElementById("mytable");
+            var rows = table.getElementsByTagName("tr");
+
+            for (var i = 1; i < rows.length; i++) {
+                var cell3 = rows[i].getElementsByTagName("td")[2];
+                var age = parseInt(cell3.innerHTML);
+
+                if (input === 'below20' && age < 20) {
+                    rows[i].style.display = "";
+                } else if (input === '20to24' && age >= 20 && age <= 24) {
+                    rows[i].style.display = "";
+                } else if (input === 'above24' && age > 24) {
+                    rows[i].style.display = "";
+                } else {
+                    rows[i].style.display = "none";
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

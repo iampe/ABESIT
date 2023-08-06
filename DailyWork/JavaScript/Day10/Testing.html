@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>City and Pin Selection</title>
+  <style>
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>City and Pin Selection</h1>
+
+  <label for="city">Select a City:</label>
+  <select id="city">
+    <option value="">-- Select City --</option>
+    <option value="delhi">Delhi</option>
+    <option value="mumbai">Mumbai</option>
+    <option value="chennai">Chennai</option>
+  </select>
+
+  <label for="pin">Select a PIN:</label>
+  <select id="pin"></select>
+
+  <script>
+    // City and Pin data
+    var cityPins = {
+      delhi: ["110001", "110002", "110003"],
+      mumbai: ["400001", "400002", "400003"],
+      chennai: ["600001", "600002", "600003"]
+    };
+
+    // Function to populate the PIN options based on the selected city
+    function populatePins() {
+      var citySelect = document.getElementById("city");
+      var pinSelect = document.getElementById("pin");
+      var selectedCity = citySelect.value;
+
+      // Clear existing options
+      pinSelect.innerHTML = "";
+
+      if (selectedCity !== "") {
+        // Get the pins for the selected city
+        var pins = cityPins[selectedCity];
+
+        // Create new option elements and append them to the PIN select
+        for (var i = 0; i < pins.length; i++) {
+          var option = document.createElement("option");
+          option.value = pins[i];
+          option.text = pins[i];
+          pinSelect.appendChild(option);
+        }
+      }
+    }
+
+    // Event listener to call the populatePins function when the city selection changes
+    document.getElementById("city").addEventListener("change", populatePins);
+  </script>
+</body>
+</html>

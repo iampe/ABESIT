@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day-6 Assignment</title>
+    <style>
+       
+        .container {
+            width: 50%;
+            margin: 150px auto;
+            padding: 20px;
+            border: 3px solid #6a0505;
+            text-align: center;
+            background-color: aqua;
+        }
+        #agree{
+            margin-right: 50px;
+            background-color:#4CAF50;;
+            
+        }
+        #agree:hover{
+            background-color: rgb(216, 226, 13);
+
+        }
+        #disagree{
+            background-color: #f44336;
+            
+        }
+        #disagree:hover{
+            background-color: blue;
+        }
+        .sec2{
+            background-color: aliceblue;
+            padding: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="background-color: rgb(193, 74, 200);"> 
+            <h1 id="h1">Welcome</h1>
+        </div>
+        
+        <div class="sec2">
+            <label for="name"><b>Name :</b></label>
+            <input type="text" id="name" placeholder="Enter your name"><br><br>
+            <label for="age"><b>Age :&nbsp;&nbsp;&nbsp;</b></label>
+            <input type="number" id="age" placeholder="Enter your age"><br><br>
+            <button onclick="Agree()" id="agree">Agree</button>
+            <button onclick="Disagree()" id="disagree">Disagree</button>
+        </div>
+        <div id="result">
+              <h2 id="name_h2"></h2>
+              <h2 id="age_h2"></h2>
+        </div>
+                     
+
+</div>
+    <script>
+        function Agree() {
+    
+
+            document.getElementById("result").style.border = " 2px solid blue";
+            document.getElementById("result").style.marginTop = "50px";
+            let name = document.getElementById('name').value;
+            let age= document.getElementById('age').value;
+            document.getElementById('name_h2').innerHTML = "Welcome Mr./Mrs. " + name;
+            document.getElementById('age_h2').innerHTML = "You are " + age + " years old.";
+        }
+
+        function Disagree(){
+            document.getElementById('name').value="";
+            document.getElementById('age').value="";
+            document.getElementById('result').innerHTML="";
+            document.getElementById("result").style.border = " 0px";
+            // document.getElementById('name_h2').innerHTML="";
+            // document.getElementById('age_h2').innerHTML="";
+        }
+
+    </script>
+</body>
+</html>

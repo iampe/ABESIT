@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <style>
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Calculator</h2>
+        <input type="text" id="result" readonly>
+        <br><br>
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button onclick="appendOperator('+')">+</button>
+        <br>
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button onclick="appendOperator('-')">-</button>
+        <br>
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button onclick="appendOperator('*')">*</button>
+        <br>
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="clearInput()">C</button>
+        <button onclick="calculateResult()">=</button>
+        <button onclick="appendOperator('/')">/</button>
+    </div>
+
+    <script>
+        function appendNumber(number) {
+            document.getElementById('result').value += number;
+        }
+
+        function appendOperator(operator) {
+            document.getElementById('result').value += operator;
+        }
+
+        function calculateResult() {
+            var expression = document.getElementById('result').value;
+            var result = eval(expression);
+            document.getElementById('result').value = result;
+        }
+
+        function clearInput() {
+            document.getElementById('result').value = '';
+        }
+    </script>
+</body>
+</html>
+
+<!-- In this example, an HTML container element with the class "container" is created to hold the calculator interface. The calculator includes a text input field (<input type="text">) to display the entered numbers and results. Numeric buttons (<button>) from 0 to 9, as well as operator buttons (+, -, *, /), are added. Each button has an onclick attribute that calls JavaScript functions.
+
+The JavaScript code within the <script> tags defines four functions:
+
+appendNumber(number): Appends the clicked number to the input field.
+appendOperator(operator): Appends the clicked operator (+, -, *, /) to the input field.
+calculateResult(): Evaluates the expression in the input field using the eval() function and displays the result in the input field.
+clearInput(): Clears the input field.
+When a button is clicked, the respective function is executed, updating the input field accordingly. The eval() function is used in the calculateResult() function to evaluate the expression as a JavaScript expression.
+
+Note: The use of eval() in this example is for simplicity, but it's important to be cautious with its usage in real-world applications, as it can execute arbitrary code. In production code, it's recommended to use a proper expression parsing and evaluation library for calculator-like functionality. -->
+
+

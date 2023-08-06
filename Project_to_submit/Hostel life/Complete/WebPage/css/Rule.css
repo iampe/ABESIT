@@ -1,0 +1,57 @@
+.rule{
+    font-family: Arial, sans-serif;
+    /* margin: 0;
+    padding: 0; */
+  }
+  
+  .HostelRule_container {
+    /* font-family: Arial, sans-serif; */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    font-size: 20px;
+    /* font-weight: bold; */
+    margin-bottom: 10px;
+  }
+  
+  .card-body {
+    font-size: 16px;
+  }
+  
+  /* Optional: Add hover effect for cards */
+  .card:hover {
+    background-color: #f0f0f0;
+  }
+
+  #imageRow1Col3 img {
+    left: 40%;
+    right: 10%;
+}
+
+#imageRow2Col3 img {
+    left: 40%;
+    right: 10%;
+}
+
+#imageRow3Col3 img {
+    left: 40%;
+    right: 10%;
+}
+  

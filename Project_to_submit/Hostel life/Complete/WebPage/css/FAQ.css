@@ -1,0 +1,15 @@
+#qoutes{
+    font-family: 'Lugrasimo', cursive;
+    color: rgb(224, 81, 172) !important ;
+}
+#faq_heading{
+  font-family: 'Lumanosimo', cursive;
+}
+.Faq_container {
+max-width: 900px;
+margin: 0 auto;
+padding: 10px;
+}
+#faq{
+  color: rgba(30, 39, 76, 0.647) !important;
+}

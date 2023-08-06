@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <title>Form-1</title>
+</head>
+
+<body>
+    <div class="container bg-success-subtle border border-danger border-5 my-4">
+        
+            <div class="mt-4 text-center">
+                <h1 >Login</h1>
+                
+            </div>
+
+            <form action="" class="mt-4">
+                <div class="mb-3">
+                    <legend>Login Details</legend>
+                    <label for="userid" class="form-label">Useri-Id</label>
+                    <input type="text" class="form-control" id="userid" placeholder="userid" required
+                        autofocus>
+                </div>
+
+                <div class=" row mb-3">
+                    <label for="pass" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="pass" placeholder="Password" required >
+                </div>
+
+                
+
+                <div class="row justify-content-center mt-4">
+                    <div class="col-2">
+                        <button onclick="signin()" class="btn btn-primary">Submit</button>
+                    </div>
+                    <div class="col-2 mx-3">
+                        <button onclick="reset()" class="btn btn-primary">Reset</button>
+                    </div>
+                </div>
+
+        </div>
+  
+        <!-- JavaScript -->
+        <script>
+            let masterData=[
+                {userid: "abhay", password:"abhay"},
+                {userid: "ram", password:"ram"},
+                {userid: "abc", password:"abc"},
+                {userid: "abcd", password:"abcd"},
+            ]
+            function signin(){
+                const user=document.getElementById("userid").value;
+                const pass=document.getElementById("pass").value;
+                for (let obj of masterData){
+                    if(obj["userid"]===user && obj["password"]===pass){
+                        window.alert(`Welcome ${user}`);
+                        break;  
+                    }
+                    else{
+                        alert('Invalid UserId or Password');
+                        break;
+                    }
+                }
+            }
+                
+            
+        </script>
+
+    
+</body>
+</html>        

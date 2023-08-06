@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Welcome</h1>
+    <h2 id="h2"></h2>
+    <br>
+    <hr>
+    <h1>Time</h1>
+    <h1 id="time"></h1>
+    <script>
+        let i=0;
+        setTimeout(abc,1000);
+
+        setInterval(count,1000);
+
+        setInterval(display,1000);
+        function abc(){
+            
+            document.getElementById("h1").innerText="hi";
+         }
+         function count(){
+            document.getElementById("h2").innerText= i++;
+         }
+
+         function display(){
+            let d= new Date();
+            document.getElementById("time").innerText= d.getHours()+" : "+ d.getMinutes()+" : "+d.getSeconds()+" : " + d.getMilliseconds();
+         }
+ 
+    </script>
+</body>
+</html>

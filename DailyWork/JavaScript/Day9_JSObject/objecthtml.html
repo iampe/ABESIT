@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <table class="table">
+          <thead>
+            <th>Item</th>
+            <th>Item-Id</th>
+            <th>Item</th>
+            <th>Item-Id</th>
+            <th>Item</th>
+            <th>Item-Id</th>
+          </thead>
+          <tr>
+            <td>Apple</td>
+            <td>ab1</td>
+            <td>Mango</td>
+            <td>ab2</td>
+            <td>Banana</td>
+            <td>ab3</td>
+          </tr>
+          <tr>
+            <td>Onion</td>
+            <td>ab4</td>
+            <td>Patato</td>
+            <td>ab5</td>
+            <td>Tomamto</td>
+            <td>ab6</td>
+          </tr>
+          <tr>
+            <td>Lady Finger</td>
+            <td>ab7</td>
+            <td>Pumpkin</td>
+            <td>ab8</td>
+            <td>Jack fruit</td>
+            <td>ab9</td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <label class="form-label">Item Id</label>
+        <input class="form-control" type="text" id="itemid" required />
+      </div>
+      <div>
+        <label class="form-label">Qty</label>
+        <input class="form-control" type="text" id="qty" required />
+      </div>
+      <div class="mt-5">
+        <button class="bg-primary" onclick="bill()">Add</button>
+      </div>
+
+      <div class="mt-5">
+        <h2>Bill</h2>
+        <table id="t1" class="table table-striped">
+          <tr>
+            <th>Item-Id</th>
+            <th>Qty</th>
+            <th>Price</th>
+          </tr>
+        </table>
+        <h1 id="tbill">Your Total Amount - 0</h1>
+      </div>
+    </div>
+    <script>
+      let masterTable = {
+        ab1: 100,
+        ab2: 80,
+        ab3: 50,
+        ab4: 25,
+      };
+      let totalbill = 0;
+      function bill() {
+        let item = document.getElementById("itemid").value;
+        let qty = document.getElementById("qty").value;
+        let price = masterTable[item] * qty;
+        totalbill += price;
+        if (item != "" || qty != "") {
+          // first method to insert element
+          // let table = document.getElementById("t1");
+          // let row = table.insertRow(1);
+          // let cell1 = row.insertCell(0);
+          // let cell2 = row.insertCell(1);
+          // let cell3 = row.insertCell(2);
+          // cell1.innerHTML = item;
+          // cell2.innerHTML = qty;
+          // cell3.innerHTML = price;
+
+           // Second method to insert element
+          let row = document.createElement("tr");
+          let cell1 = document.createElement("td");
+          cell1.innerHTML = item;
+          row.appendChild(cell1);
+          let cell2 = document.createElement("td");
+          cell2.innerHTML = qty;
+          row.appendChild(cell2);
+          let cell3 = document.createElement("td");
+          cell3.innerHTML = price;
+          row.appendChild(cell3);
+          document.getElementById("t1").appendChild(row);
+
+          document.getElementById("tbill").innerHTML =
+            "Your Total Amount -" + totalbill;
+        }
+      }
+    </script>
+  </body>
+</html>

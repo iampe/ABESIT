@@ -1,0 +1,26 @@
+body{
+    color: rgba(30, 39, 76, 0.747) !important;
+  }
+ a i{
+    color: rgba(30, 39, 76, 0.821) !important;
+  }
+  #qoutes {
+    font-family: 'Lugrasimo', cursive;
+    color: rgba(30, 39, 76, 0.821) !important;
+  }
+ 
+  a {
+    text-decoration: none;/* Remove the underline */
+    
+  }
+
+  li a{
+    color: rgba(30, 39, 76, 0.821) !important;
+  }
+
+  .feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+  }
+  

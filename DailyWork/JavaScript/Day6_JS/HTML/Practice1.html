@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice-1</title>
+    <style>
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <h1 id="h1">Welcome</h1>
+            <label for="result">Name</label>
+            <input type="text" id="result"><br><br>
+            <button onclick="ClickMe()">Click Me</button>
+           
+            
+
+        <!-- <form target="_blank">
+            <label for="result">Name</label>
+            <input type="text" id="result"><br><br>
+            <button onclick="ClickMe()">Click Me</button>
+            <h1 id="h1"></h1>
+        </form> -->
+</div>
+    <script>
+        function ClickMe() {
+            let name = document.getElementById('result').value;
+            let y= document.getElementById('h1').innerHTML;
+            document.getElementById('h1').innerHTML = y+" " + name;
+        }
+
+    </script>
+</body>
+</html>

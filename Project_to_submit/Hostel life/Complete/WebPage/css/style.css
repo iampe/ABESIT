@@ -1,0 +1,29 @@
+img:focus {
+    outline: none;
+  }
+
+  body{
+    color: rgba(30, 39, 76, 0.647) !important;
+  }
+ a i{
+    color: rgba(30, 39, 76, 0.821) !important;
+  }
+  #qoutes {
+    font-family: 'Lugrasimo', cursive;
+    color: rgba(30, 39, 76, 0.647) !important;
+  }
+
+  .text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+ 
+  a {
+    text-decoration: none;/* Remove the underline */
+    
+  }
+
+  li a{
+    color: rgba(30, 39, 76, 0.821) !important;
+  }

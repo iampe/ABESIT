@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Life</title>
+
+  <!-- Social icon -->
+  <script src="https://kit.fontawesome.com/02bc95fce2.js" crossorigin="anonymous"></script>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+
+  <!-- Bookstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/Clock.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top border-bottom border-2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><i class="fa-sharp fa-solid fa-house fa-2xl"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fs-4 fw-semibold" aria-current="page" href="#about" aria-readonly="true">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active fs-4 fw-semibold" aria-current="page" href="#testimonial_text">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-4 fw-semibold" aria-current="page" href="./layout/facilities.html">Facilities</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active fs-4 fw-semibold" aria-current="page" href="./layout/faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- NavBar End-->
+
+  <!-- Text -->
+  <div class=" pt-5 mt-5 text-center border-bottom border-5">
+    <div class="col-lg-6 mx-auto">
+      <p class="lead fw-semibold display-5 text-body-emphasis " id="qoutes">ABESIT ~ Hostel</p>
+    </div>
+  </div>
+  <!-- Text End -->
+
+  <!-- Watch Section -->
+
+  <div class="container clockBody mt-3 p-5 mb-3 ">
+    <div class="clock">
+      <div id="date"></div>
+      <div id="time"></div>
+    </div>
+  </div>
+  <p class="border-bottom border-5"></p>
+  <!-- Watch Section End -->
+
+  <!-- Quotes -->
+  <div class="mt-3 text-center border-bottom border-5 d-none d-md-block">
+    <div class="container mt-2 pb-2" id="quotes">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item ">
+            <img src="./Image/Quotes1.png" class="d-block w-100" height="600px" alt="Quotes">
+          </div>
+          <div class="carousel-item active">
+            <img src="./Image/Quotes2.png" class="d-block w-100" height="600px" alt="Quotes">
+          </div>
+          <div class="carousel-item">
+            <img src="./Image/Quotes3.png" class="d-block w-100" height="600px" alt="Quotes">
+          </div>
+          <div class="carousel-item">
+            <img src="./Image/Quotes4.png" class="d-block w-100" height="600px" alt="Quotes">
+          </div>
+          <div class="carousel-item">
+            <img src="./Image/Quotes5.png" class="d-block w-100" height="600px" alt="Quotes">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <!-- Quotes End -->
+  <!--About section  -->
+  <div class="container mt-3 " id="about">
+
+    <p class="border-bottom border-5  fs-1">About</p>
+
+    <div class="row mt-3 mb-3">
+      <p class="text-center text-decoration-underline fs-1">COLLEGE</p>
+      <div class=" col-sm-12 col-md-12 col-lg-6 align-items-center ">
+        <img src="./Image/campus.jpg" class="img-fluid rounded float-start" alt="">
+      </div>
+      <div class=" col-sm-12 col-md-12 col-lg-6 ">
+        <p class="text-justify">
+        <ul>
+          <li class="fw-semibold ">ABES Institute of Technology was founded in 2007 under Ved Foundation with the
+            objective of creating an environment of learning and knowledge.It is located in Ghaziabad, Uttar Pradesh,
+            India.</li>
+          <li class="fw-semibold ">The institute is accredited by the National Board of Accreditation (NBA) and the All
+            India Council for Technical Education (AICTE).And offers undergraduate and postgraduate programs in
+            engineering, technology, and management.</li>
+          <li class="fw-semibold ">ABESIT has a strong alumni network that includes professionals working in various
+            industries around the world.</li>
+          <li class="fw-semibold ">Infrastructure wise, ABESIT Campus have air-conditioned class rooms and tutorial
+            rooms, ultra-modern Auditorium and nar Hall with audio-visual aids along with Amphitheater of 2000 seating
+            capacity and WiFi network that covers the entire campus.State-of-art Library with reading room provides
+            teaching learning atmosphere in the campus.</li>
+          <!-- <li class="fw-semibold">The visionary approach of founders of ABESIT Group with firm belief on expanding the horizons of education opened a new chapter for little and younger ones with the name Step Up School from session 2017-18.</li>
+            <li class="fw-semibold">Carrying forward the legacy of maintaining high standards of education, ABESIT established ABESIT College of Pharmacy from the academic year 2019-20 with an endeavor to excel in new domain with same zeal and fervor which is visible in the first-year performance.</li>
+             -->
+        </ul>
+        </p>
+      </div>
+    </div>
+    <div class="row border-top border-5 py-3">
+      <p class="text-center text-decoration-underline fs-1">HOSTEL</p>
+      <div class=" col-sm-12 col-md-12 col-lg-6 ">
+        <p class="text-justify">
+        <ul>
+          <li class="fw-semibold ">ABESIT Ghaziabad has two hostels, one for boys and one for girls. Both hostels are
+            located on the college campus, which is in Crossings Republik, Ghaziabad. The hostels are well-maintained
+            and provide comfortable accommodation for students.</li>
+          <li class="fw-semibold ">The boys' hostel has a capacity of 500 students and the girls' hostel has a capacity
+            of 300 students. The hostels are divided into single, double, and triple rooms. All rooms are equipped with
+            beds, mattresses, cupboards, and study tables. The hostels also have common rooms, laundry facilities, and a
+            mess.</li>
+          <li class="fw-semibold ">The mess in the hostels serves vegetarian food. The food is prepared by trained cooks
+            and is of good quality. The mess also has a canteen where students can buy snacks and drinks.</li>
+          <li class="fw-semibold ">The hostels have a strict security system. The campus is guarded by security guards
+            24 hours a day. The hostels also have CCTV cameras installed.</li>
+        </ul>
+        </p>
+      </div>
+      <div class=" col-sm-12 col-md-12 col-lg-6">
+        <img src="./Image/hostel1.jpg" class="img-fluid rounded float-end" alt="">
+      </div>
+
+    </div>
+
+  </div>
+  <p class="border-bottom border-5"></p>
+  <!-- About section end -->
+
+  <!-- Tetimonial -->
+  <p class="border-bottom border-5 container fs-1" id="testimonial_text">Testimonial</p>
+  <div class="container mt-5 p-5" id="testimonial_main">
+    <div id="testimonial" class="carousel slide carousel-dark ">
+
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row justify-content-evenly">
+              <div class="col-lg-5  text-center">
+                <div>
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp" alt="avatar" style="width: 150px;" />
+                </div>
+                <h5 class="mb-3">Gopal Mishra</h5>
+                <p>3<sup>rd</sup> Year</p>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  Hostel life taught me valuable life skills, from managing finances to cooking. It's where I met my
+                  lifelong friends, and I cherish those bonds dearly.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                </ul>
+              </div>
+              <div class="col-lg-5 d-none d-lg-block  text-center ">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar" style="width: 150px;" />
+                <h5 class="mb-3">Saurabh Pathak</h5>
+                <p>3<sup>rd</sup> Year</p>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  Living in a hostel was an adventure filled with laughter and late-night talks. I learned to be
+                  independent and embrace diverse cultures, broadening my horizons.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star-half-alt fa-sm"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class=" row justify-content-evenly">
+              <div class="col-lg-5   text-center ">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp" alt="avatar" style="width: 150px;" />
+                <h5 class="mb-3">Sachin</h5>
+                <p>4 <sup>th</sup> Year</p>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  Hostel days were an unforgettable rollercoaster of emotions, from homesickness to euphoria. I'm
+                  grateful for the experiences that shaped me into a better, stronger person.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="far fa-star fa-sm"></i></li>
+                </ul>
+              </div>
+              <div class="col-lg-5 d-none d-lg-block  text-center ">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp" alt="avatar" style="width: 150px;" />
+                <h5 class="mb-3">Pranjal Gupta</h5>
+                <p>4 <sup>th</sup> Year</p>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  The hostel became my second family, always there to lend a helping hand. I found comfort and support
+                  during tough times, making beautiful memories together.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row justify-content-evenly">
+              <div class="col-lg-5  text-center">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(8).webp" alt="avatar" style="width: 150px;" />
+                <h5 class="mb-3">Rohan Singh</h5>
+                <p>2 <sup>nd</sup> Year</p>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  Hostel life was a mix of challenges and triumphs. It taught me resilience, adaptability, and the joy
+                  of celebrating small victories with friends who became family.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li>
+                    <i class="fas fa-star-half-alt fa-sm"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-5 d-none d-lg-block  text-center">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp" alt="avatar" style="width: 150px;" />
+                <h5 class="mb-3">Nagendra Prajapati</h5>
+                <p>2 <sup>nd</sup> Year</p>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  In the hostel, I discovered the joy of sharing meals and dreams with people from diverse backgrounds.
+                  We laughed, cried, and created lasting connections.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="far fa-star fa-sm"></i></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class=" row justify-content-evenly">
+              <div class="col-lg-5  text-center">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar" style="width: 150px;" />
+                <h5 class="mb-3">Ravindra Kumar</h5>
+                <p>1 <sup>st</sup> Year</p>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  The hostel experience shaped me into a more open-minded and empathetic person. It exposed me to
+                  different perspectives and cultures, making me appreciate the world's diversity.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                </ul>
+              </div>
+              <div class="col-lg-5 d-none d-lg-block  text-center">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+                  style="width: 150px;" />
+                <h5 class="mb-3">Rajesh Pal</h5>
+                <p>1 <sup>st</sup> Year</p>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  Late-night study sessions and spontaneous adventures made hostel life thrilling. The camaraderie we
+                  shared made every day feel like a treasure to cherish.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li>
+                    <i class="fas fa-star-half-alt fa-sm"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row justify-content-evenly">
+              <div class="col-lg-5  text-center">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp" alt="avatar" style="width: 150px;" />
+                <h5 class="mb-3">Roshan Singh</h5>
+                <p>4 <sup>th</sup> Year</p>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  Hostel life gifted me with friends who became my support system for life. We encouraged each other,
+                  faced challenges together, and celebrated each other's successes.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                </ul>
+              </div>
+              <div class="col-lg-5 d-none d-lg-block  text-center">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                  style="width: 150px;" />
+                <h5 class="mb-3">Mohit Verma</h5>
+                <p>4 <sup>th</sup> Year</p>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  Hostel life: bonds made, laughter shared, lessons learned. Late nights, cramped rooms, lifelong
+                  friends. Memories cherished, hearts connected. Forever grateful for the journey.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="far fa-star fa-sm"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="d-flex justify-content-center mt-4">
+        <button class="carousel-control-prev position-relative" type="button" data-bs-target="#testimonial"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next position-relative" type="button" data-bs-target="#testimonial"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+    </div>
+  </div>
+  <!-- Tetimonial End -->
+
+  <!-- Footer -->
+  <p class="border-bottom border-5  "></p>
+  <div class="container mt-5 mb-5 ">
+    <footer class="text-center text-lg-start  text-muted mt-5">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between ">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div class="">
+          <a href="https://www.facebook.com/" class="me-4 text-reset"><i
+              class="fa-brands fa-facebook-f fa-bounce fa-2xl" style="color: rgba(30, 39, 76, 0.821)"></i></a>
+          <a href="https://twitter.com" class="me-4 text-reset"><i
+              class="fa-brands fa-twitter fa-bounce fa-2xl" style="color: rgba(30, 39, 76, 0.821)"></i></a>
+          <a href="https://www.instagram.com/" class="me-4 text-reset"><i
+              class="fa-brands fa-instagram fa-bounce fa-2xl" style="color: rgba(30, 39, 76, 0.821)"></i></a>
+          <a href="hhttps://www.linkedin.com/in" class="me-4 text-reset"><i
+              class="fa-brands fa-linkedin fa-bounce fa-2xl" style="color: rgba(30, 39, 76, 0.821)"></i></a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+
+      <!-- Copyright -->
+      <div class="text-center mt-5">
+        <a  class="text-muted" href="./layout/Devloper.html" target="_blank">© 2023 Copyright:@</a>
+
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- Footer end -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="./javaScript/Clock.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1" onkeydown="abc()" >Press key down to change</h1>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <p  onclick="abc1(this)">Click me to change</p>
+    
+    <img src="" alt="">
+
+    
+    <script>
+        function abc(){
+            
+           document.getElementById("h1").innerText="hi";
+
+        }
+
+        function abc1(id){
+            
+            id.innerText="Do not ";
+
+        }
+
+    </script>
+
+</body>
+</html>
